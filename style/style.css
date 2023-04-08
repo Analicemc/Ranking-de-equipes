@@ -1,6 +1,29 @@
-table {
+:root{
+    --green: #40531B;
+    --light-green: #b1da9b;
+    --red: #C03221;
+    --yellow: #F5B700;
+    --white: #F2F6D0;
+}
+table{
     border-collapse: collapse;
     width: 100%;
+}
+
+th{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+th span{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+th i{
+    cursor: pointer;
+    color: var(--yellow);
 }
 
 th,
@@ -9,13 +32,13 @@ td {
     padding: 8px;
 }
 
-th {
-    background-color: #333;
-    color: white;
+tr:nth-child(odd) {
+    background-color: var(--light-green);
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+td:first-child{
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .logo {

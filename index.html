@@ -10,12 +10,17 @@
     <h1>Ranqueamento de Equipes</h1>
     <table>
         <tr>
-            <th>Posição</th>
+            <th>Posição <span><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i></span></th><!-- Alguns ícones estão em um span para que fiquem juntos quando aplicarmos o flex-direction: column;-->
+
             <th>Logotipo</th>
-            <th>Equipe</th>
-            <th>Turma</th>
-            <th>Pontuação</th>
-            <th>Nota no Boletim</th>
+
+            <th>Equipe <i class="fa-solid fa-arrow-down-a-z"></i> <i class="fa-solid fa-arrow-up-a-z"></i></th>
+
+            <th>Turma <i class="fa-solid fa-filter"></i></th>
+
+            <th>Pontuação <span><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i></span></th>
+
+            <th>Nota no Boletim <span><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i></span></th>
         </tr>
         <tr>
             <td>1</td>
@@ -275,5 +280,9 @@
         </tr>
     </table>
 </body>
-<script src="script/script.js"></script>
+<!-- Link para o kit de ícones do Font Awesome -->
+<script src="https://kit.fontawesome.com/c1ff1e8edf.js" crossorigin="anonymous"></script>
+<script src="script/resize-logos.js"></script>
+<script src="script/sort.js"></script>
+<script src="script/search.js"></script>
 </html>
