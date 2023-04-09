@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 :root{
     --green: #40531B;
     --light-green: #b1da9b;
@@ -6,14 +8,38 @@
     --white: #F2F6D0;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+header{
+    background-color: var(--light-green);
+    height: 150px;
+    text-align: center;
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 header h1{
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin: auto;
 }
 
 main{
     width: 70vw;
-    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
     min-width: 540px;
+    margin: 50px auto;
+}
+
+main p{
+    text-align: justify;
+    margin: 0 0 25px 0;
 }
 
 table{
@@ -68,15 +94,30 @@ th select{
     background-color: var(--white);
 }
 
-th,
-td {
-    text-align: left;
+td, th {
+    text-align: center;
     padding: 8px;
     box-sizing: border-box;
 }
 
+td:nth-child(3), td:nth-child(4){
+    text-align: left;
+}
+
+th{
+    border-left: 0.5px solid var(--light-green);
+}
+
+th:first-child{
+    border: none;
+}
+
 tr:nth-child(odd) {
     background-color: var(--light-green);
+}
+
+tr:hover{
+    background-color: var(--yellow);
 }
 
 td:first-child{
@@ -87,4 +128,45 @@ td:first-child{
 .logo {
     width: 100px;
     height: auto;
+}
+
+footer{
+    background-color: var(--green);
+    color: var(--white);
+    height: 200px;
+    box-sizing: border-box;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#contato-devs{
+    margin-bottom: 1%;
+}
+
+#contato-devs a{
+    margin: 0 1% 0 1%;
+    color: var(--white);
+}
+
+footer h2{
+    margin-bottom: 2px;
+    font-size: 1.3em;
+}
+
+footer #redes-instituto{
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+}
+
+footer #redes-instituto a{
+    color: var(--red);
+    text-decoration: none;
+    font-size: 2.5rem; 
+    transition: transform 0.5s;
+}
+
+#redes-instituto a:hover{
+    transform: scale(1.1);
 }
