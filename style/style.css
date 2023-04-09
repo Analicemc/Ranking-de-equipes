@@ -13,7 +13,7 @@ header h1{
 main{
     width: 70vw;
     margin: auto;
-    min-width: none;
+    min-width: 540px;
 }
 
 table{
