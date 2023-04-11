@@ -4,4 +4,3 @@ Aprimorar a página de ranking de equipes da disciplina de Desenvolvimento WEB, 
 ## Feito em conjunto com @suzanasantoss
 
 ## Link para o site
-https://analicemc.github.io/Ranking-de-equipes/
