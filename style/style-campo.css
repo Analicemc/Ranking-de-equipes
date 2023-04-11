@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+#pesquisar::placeholder {
+    font-size: 14px; 
+    background-color: lightgreen; 
+    padding: 5px; 
+    font-family: 'Roboto Slab', serif;
+
+}
+#pesquisar {
+    color: #3a03d1;
+    font-style: initial;
+    font-family: 'Roboto Slab', serif;
+}
