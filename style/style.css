@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-:root{
+:root {
     --green: #40531B;
     --light-green: #b1da9b;
     --red: #C03221;
@@ -8,13 +8,13 @@
     --white: #F2F6D0;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: var(--white);
 }
 
-header{
+header {
     background-color: var(--light-green);
     height: 150px;
     text-align: center;
@@ -23,13 +23,13 @@ header{
     border-bottom-right-radius: 10px;
 }
 
-header h1{
+header h1 {
     text-align: center;
     font-family: 'Roboto Slab', serif;
     margin: auto;
 }
 
-main{
+main {
     width: 70vw;
     font-family: 'Roboto Slab', serif;
     font-size: 1.1em;
@@ -37,52 +37,57 @@ main{
     margin: 50px auto;
 }
 
-main p{
+main p {
     text-align: justify;
     margin: 0 0 25px 0;
 }
 
-table{
+table {
     box-shadow: -1px 1px 5px 2px #aaaaaa;
     border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-border-radius: 15px;
     border-collapse: collapse;
-    width: 100%; /* o tamanho está mudando quando atualiza tabela, fazer de modo que fique estático */
+    width: 100%;
+    /* o tamanho está mudando quando atualiza tabela, fazer de modo que fique estático */
 }
 
 /* Não tem como aplicar border-radius diretamente na tabela, logo, aplicarei internamente nos tds e ths */
 
-table tr:last-child td:last-child{
+table tr:last-child td:last-child {
     border-bottom-right-radius: 15px;
 }
 
-table tr:last-child td:first-child{
+table tr:last-child td:first-child {
     border-bottom-left-radius: 15px;
 }
 
-table tr:first-child th:last-child{
+table tr:first-child th:last-child {
     border-top-right-radius: 15px;
 }
 
-table tr:first-child th:first-child{
+table tr:first-child th:first-child {
     border-top-left-radius: 15px;
 }
 
-th{
+th {
     background-color: var(--green);
     color: var(--white);
 }
 
-th span{
+th span {
     display: flex;
     flex-direction: column;
 }
 
-th i{
+th i {
     cursor: pointer;
     color: var(--yellow);
 }
 
-th select{
+th select {
     outline: none;
     border: none;
     -webkit-appearance: none;
@@ -90,25 +95,26 @@ th select{
     appearance: none;
     background: url(/assets/filter-solid.svg) no-repeat right;
     padding-right: 20px;
-    /* fill: var(--yellow); */
     background-color: var(--white);
 }
 
-td, th {
+td,
+th {
     text-align: center;
     padding: 8px;
     box-sizing: border-box;
 }
 
-td:nth-child(3), td:nth-child(4){
+td:nth-child(3),
+td:nth-child(4) {
     text-align: left;
 }
 
-th{
+th {
     border-left: 0.5px solid var(--light-green);
 }
 
-th:first-child{
+th:first-child {
     border: none;
 }
 
@@ -116,11 +122,15 @@ tr:nth-child(odd) {
     background-color: var(--light-green);
 }
 
-tr:hover{
+tbody tr:hover {
     background-color: var(--yellow);
+    -moz-background-color: var(--yellow);
+    -ms-background-color: var(--yellow);
+    -o-background-color: var(--yellow);
+    -webkit-background-color: var(--yellow);
 }
 
-td:first-child{
+td:first-child {
     font-weight: 500;
     font-size: 1.2rem;
 }
@@ -130,7 +140,7 @@ td:first-child{
     height: auto;
 }
 
-footer{
+footer {
     background-color: var(--green);
     color: var(--white);
     height: 200px;
@@ -140,33 +150,49 @@ footer{
     font-family: 'Roboto Slab', serif;
 }
 
-#contato-devs{
+#contato-devs {
     margin-bottom: 1%;
 }
 
-#contato-devs a{
+#contato-devs a {
     margin: 0 1% 0 1%;
     color: var(--white);
 }
 
-footer h2{
+footer h2 {
     margin-bottom: 2px;
     font-size: 1.3em;
 }
 
-footer #redes-instituto{
+footer #redes-instituto {
     display: flex;
     gap: 3%;
     justify-content: center;
 }
 
-footer #redes-instituto a{
+footer #redes-instituto a {
     color: var(--red);
     text-decoration: none;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     transition: transform 0.5s;
 }
 
-#redes-instituto a:hover{
+#redes-instituto a:hover {
     transform: scale(1.1);
+}
+
+/* ----------------------- */
+#pesquisar::placeholder {
+    font-size: 14px;
+    background-color: lightgreen;
+    padding: 5px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#pesquisar {
+    color: #3a03d1;
+    font-style: initial;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 20px;
 }
